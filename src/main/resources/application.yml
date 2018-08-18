@@ -54,7 +54,7 @@ eureka:
       VERSION: v1
   client:
     serviceUrl:
-      defaultZone: http://localhost:8000/eureka/
+      defaultZone: http://register-server.training:8000/eureka/config-server:config-server.training:8100
     registryFetchIntervalSeconds: 10
 hystrix:
   command:
@@ -77,4 +77,6 @@ mybatis:
   mapperLocations: classpath*:/mapper/*.xml
   configuration: # 数据库下划线转驼峰配置
     mapUnderscoreToCamelCase: true
-
+myname:
+  code: 19522
+  name: 武琦川
